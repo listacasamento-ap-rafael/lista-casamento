@@ -1,27 +1,28 @@
-# ListaCasamento
+# Lista de Presentes de Casamento de Ana Paula e Rafael
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 14.2.13.
+Este repositório contém um projeto Angular que exibe uma lista de presentes a partir de `assets/gifts.json`, abre o Google Form prefill para reservas e consome um Apps Script para ler e confirmar reservas.
 
-## Development server
+## Estrutura principal
+- `src/assets/gifts.json` — lista de presentes.
+- `src/environments/environment.ts` — configure Form ID, entry IDs, Apps Script URL e token.
+- `src/app/components` — componentes `gift-list`, `gift-item`, `admin-confirm`.
+- `src/app/services/reservation.service.ts` — serviço para GET/POST no Apps Script.
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+## Passo 1 Criar o projeto Angular
+Se ainda não tem o projeto:
+```bash
+npm install -g @angular/cli
+ng new lista-casamento --routing=false --style=scss
+cd lista-casamento
+```
 
-## Code scaffolding
+## Passo 2 executar o projeto
+```bash
+npm start
+```
+Endereço local -> localhost:4200
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
-
-## Build
-
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
-
-## Running unit tests
-
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+## Passo 3 antes do deploy/commit para o github pages
+```bash
+npm build-gh   
+```

@@ -1,0 +1,22 @@
+<div class="admin-panel">
+  <div *ngIf="!authenticated">
+    <input type="password" [(ngModel)]="password" placeholder="Senha admin">
+    <button (click)="login()">Entrar</button>
+  </div>
+
+  <div *ngIf="authenticated">
+    <h2>Reservas</h2>
+    <table>
+      <tr><th>Presente</th><th>Convidado</th><th>Contato</th><th>Status</th><th>Ação</th></tr>
+      <tr *ngFor="let r of reservations">
+        <td>{{r['ID do presente']}}</td>
+        <td>{{r['Nome do convidado']}}</td>
+        <td>{{r['Contato']}}</td>
+        <td>{{r['Status'] || 'reserved'}}</td>
+        <td>
+          <button *ngIf="r['Status'] !== 'confirmed'" (click)="confirm(r)">Confirmar</button>
+        </td>
+      </tr>
+    </table>
+  </div>
+</div>

@@ -1,0 +1,7 @@
+<div class="gift-grid">
+  <app-gift-item
+    *ngFor="let g of gifts"
+    [gift]="g"
+    [status]="getStatus(g.id)">
+  </app-gift-item>
+</div>

@@ -1,0 +1,23 @@
+[
+  {
+    "id": "GFT001",
+    "title": "Conjunto de panelas",
+    "description": "Aço inox 5 peças",
+    "imageUrl": "https://via.placeholder.com/400x300?text=Panelas",
+    "price": 250.00
+  },
+  {
+    "id": "GFT002",
+    "title": "Jogo de cama casal",
+    "description": "Lençol 300 fios, 4 peças",
+    "imageUrl": "https://via.placeholder.com/400x300?text=Len%C3%A7ol",
+    "price": 180.00
+  },
+  {
+    "id": "GFT003",
+    "title": "Conjunto de taças",
+    "description": "6 taças de cristal",
+    "imageUrl": "https://via.placeholder.com/400x300?text=Ta%C3%A7as",
+    "price": 120.00
+  }
+]

@@ -1,0 +1,14 @@
+<div class="card">
+  <img [src]="gift.imageUrl" alt="{{gift.title}}">
+  <div class="card-body">
+    <h3>{{gift.title}}</h3>
+    <p>{{gift.description}}</p>
+    <p class="price">R$ {{gift.price}}</p>
+    <div class="actions">
+      <a class="btn" [href]="getPrefillUrl()" target="_blank" rel="noopener">Reservar</a>
+      <span *ngIf="status === 'reserved'" class="badge reserved">Reservado</span>
+      <span *ngIf="status === 'confirmed'" class="badge confirmed">Confirmado</span>
+    </div>
+  </div>
+</div>
+
