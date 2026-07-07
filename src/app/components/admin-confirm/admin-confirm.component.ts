@@ -18,12 +18,13 @@ export class AdminConfirmComponent implements OnInit {
   }
 
   load(): void {
-    this.resService.getReservations().subscribe(r => this.reservations = r || []);
+    // this.resService.getReservations().subscribe(r => this.reservations = r || []);
   }
 
   login(): void {
-    // simples verificação local; o Apps Script também valida token no POST
-    if (this.password === 'SENHA_ADMIN_LOCAL') this.authenticated = true;
+    if (this.password === 'SENHA_ADMIN_LOCAL') {
+      this.authenticated = true;
+    }
   }
 
   confirm(item: any): void {

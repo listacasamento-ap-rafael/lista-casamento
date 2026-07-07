@@ -1,13 +1,19 @@
 <div class="admin-panel">
-  <div *ngIf="!authenticated">
-    <input type="password" [(ngModel)]="password" placeholder="Senha admin">
-    <button (click)="login()">Entrar</button>
-  </div>
+  <form *ngIf="!authenticated" (ngSubmit)="login()" class="login-form">
+    <input type="password" [(ngModel)]="password" name="password" placeholder="Senha admin" required>
+    <button type="submit">Entrar</button>
+  </form>
 
   <div *ngIf="authenticated">
     <h2>Reservas</h2>
     <table>
-      <tr><th>Presente</th><th>Convidado</th><th>Contato</th><th>Status</th><th>Ação</th></tr>
+      <tr>
+        <th>Presente</th>
+        <th>Convidado</th>
+        <th>Contato</th>
+        <th>Status</th>
+        <th>Ação</th>
+      </tr>
       <tr *ngFor="let r of reservations">
         <td>{{r['ID do presente']}}</td>
         <td>{{r['Nome do convidado']}}</td>

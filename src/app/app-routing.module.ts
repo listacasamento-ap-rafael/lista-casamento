@@ -2,11 +2,13 @@ import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { GiftListComponent } from './components/gift-list/gift-list.component';
 import { AdminConfirmComponent } from './components/admin-confirm/admin-confirm.component';
+import {HomeComponent} from "./components/home/home.component";
 
 const routes: Routes = [
+  { path: 'home', component: HomeComponent },
   { path: 'gifts', component: GiftListComponent },
   { path: 'admin', component: AdminConfirmComponent },
-  { path: '', redirectTo: '/', pathMatch: 'full' }
+  { path: '', redirectTo: '/home', pathMatch: 'full' }
 ];
 
 @NgModule({
