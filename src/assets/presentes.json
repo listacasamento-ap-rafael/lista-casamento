@@ -50,7 +50,7 @@
     "description": "Para aquecer nossas refeições mantendo tudo organizado.",
     "price": 30,
     "image": "assets/images/presentes/tampa-microondas.png",
-    "reserved": 0,
+    "reserved": 1,
     "total": 1
   },
   {
