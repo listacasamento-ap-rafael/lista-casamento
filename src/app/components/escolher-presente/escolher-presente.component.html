@@ -1,3 +1,14 @@
+<div class="loading-overlay" *ngIf="loading">
+
+  <div class="loader"></div>
+
+  <span>
+    Aguarde...
+  </span>
+
+</div>
+
+
 <div class="gift-page">
 
   <div class="overlay">
@@ -74,8 +85,8 @@
           <div class="progress">
 
             <div *ngIf="!pendingReservations.has(gift.id)"
-              class="bar"
-              [style.width.%]="(gift.reserved / gift.total) * 100">
+                 class="bar"
+                 [style.width.%]="(gift.reserved / gift.total) * 100">
             </div>
 
           </div>
@@ -86,14 +97,18 @@
           </small>
 
 
-          <button *ngIf="gift.reserved < gift.total && !pendingReservations.has(gift.id)"
+          <button
+            *ngIf="
+            gift.reserved < gift.total &&
+            !pendingReservations.has(gift.id)
+            "
             (click)="presentear(gift)">
             🎁 Presentear
           </button>
 
           <span
-            class="reserved-message"
-            *ngIf="pendingReservations.has(gift.id)">
+            *ngIf="pendingReservations.has(gift.id)"
+            class="reserved-message">
             Presente confirmado ❤️
           </span>
 

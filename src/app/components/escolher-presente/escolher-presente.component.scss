@@ -405,3 +405,51 @@ input:checked + .slider {
 input:checked + .slider:before {
   transform:translateX(27px);
 }
+
+.loading-overlay {
+
+  position: fixed;
+  inset: 0;
+
+  background: rgba(251, 248, 241, 0.85);
+
+  display: flex;
+  flex-direction: column;
+
+  justify-content: center;
+  align-items: center;
+
+  z-index: 9999;
+
+  color: #6d7161;
+
+  font-size: 1.1rem;
+  font-weight: 600;
+
+}
+
+
+.loader {
+
+  width: 45px;
+  height: 45px;
+
+  border: 5px solid #bbbdb0;
+  border-top-color: #6d7161;
+
+  border-radius: 50%;
+
+  animation: spin 0.8s linear infinite;
+
+  margin-bottom: 15px;
+
+}
+
+
+@keyframes spin {
+
+  to {
+    transform: rotate(360deg);
+  }
+
+}

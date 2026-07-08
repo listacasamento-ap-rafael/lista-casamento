@@ -23,30 +23,33 @@ export class EscolherPresenteComponent implements OnInit {
   selectedGift?: presente;
   showModal = false;
   showOnlyAvailable = false;
+  loading = false;
 
   presentes: presente[] = [];
   pendingReservations = new Set<number>();
 
   constructor(private http: HttpClient, private router: Router) {
-    this.recebePresentes();
   }
 
   ngOnInit(): void {
-    // this.pendingReservations.clear();
+    this.recebePresentes();
   }
 
   recebePresentes(): void {
+    this.loading = true;
     this.http
       .get<presente[]>(
         'https://lista-casamento-api.listacasamento-ap-rafael.workers.dev'
       ).subscribe({
-      next: (resultado: any) => {
+      next: (resultado: presente[]) => {
         console.log(resultado);
         this.presentes = resultado;
+        this.loading = false;
       },
       error: (erro: any) => {
         console.log(erro);
         this.presentes = erro;
+        this.loading = false;
       },
     })
   }
@@ -79,11 +82,15 @@ export class EscolherPresenteComponent implements OnInit {
 
 
   confirmGift() {
+
+    this.loading = true;
+
     if (!this.selectedGift) {
       return;
     }
 
     const giftId = this.selectedGift.id;
+
     this.pendingReservations.add(giftId);
 
     this.http.post(
@@ -91,18 +98,35 @@ export class EscolherPresenteComponent implements OnInit {
       {
         id: giftId
       }
-    ).subscribe({
-      next: (resultado: any) => {
-        console.log(resultado);
-        this.selectedGift!.reserved++;
-        this.closeModal();
-      },
-      error: (erro: any) => {
-        console.log(erro);
-        this.selectedGift!.reserved++;
-        this.closeModal();
-      },
-    })
+    )
+      .subscribe({
+
+        next: () => {
+
+          const gift = this.presentes.find(
+            item => item.id === giftId
+          );
+
+          if (gift) {
+            gift.reserved++;
+          }
+
+          this.loading = false;
+
+          this.closeModal();
+
+        },
+
+        error: (erro) => {
+
+          console.error(erro);
+
+          this.pendingReservations.delete(giftId);
+          this.loading = false;
+
+        }
+
+      });
 
   }
 
