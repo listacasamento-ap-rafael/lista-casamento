@@ -3,8 +3,8 @@
 }
 
 .landing {
-  min-height: 97vh;
-  background-image: url('../../../assets/images/background.png');
+  min-height: 100vh;
+  background-image: url('../../../assets/images/teste.png');
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -12,7 +12,7 @@
   justify-content: center;
   align-items: center;
   position: relative;
-  padding: 0.25vw;
+  padding: 0;
 }
 
 .logo {
@@ -189,6 +189,11 @@ h1 span {
       opacity: .9;
       font-size: .85rem;
     }
+
+  }
+
+  .text:hover {
+    transform: translateY(-3px);
   }
 
 }
