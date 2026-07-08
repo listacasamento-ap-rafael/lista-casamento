@@ -82,7 +82,7 @@
             {{ gift.description }}
           </p>
 
-          <div class="progress" *ngIf="!pendingReservations.has(gift.id)">
+          <div class="progress" *ngIf="!pendingReservations.has(gift.id) && gift.reserved < gift.total">
 
             <div
                  class="bar"
@@ -92,7 +92,7 @@
           </div>
 
 
-          <small *ngIf="!pendingReservations.has(gift.id)">
+          <small *ngIf="!pendingReservations.has(gift.id) && gift.reserved < gift.total">
             {{ gift.reserved }} de {{ gift.total }}
           </small>
 
@@ -110,6 +110,12 @@
             *ngIf="pendingReservations.has(gift.id)"
             class="reserved-message">
             Presente confirmado ❤️
+          </span>
+
+          <span
+            *ngIf="gift.reserved >= gift.total"
+            class="reserved-message">
+            Esse presente já foi escolhido️
           </span>
 
 

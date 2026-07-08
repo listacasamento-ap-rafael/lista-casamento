@@ -5,7 +5,7 @@
     "description": "Um item essencial para preparar nossas receitas favoritas.",
     "price": 25,
     "image": "assets/images/presentes/colher-pau.png",
-    "reserved": 0,
+    "reserved": 1,
     "total": 1
   },
   {
@@ -14,7 +14,7 @@
     "description": "Para facilitar o preparo dos nossos pratos do dia a dia.",
     "price": 20,
     "image": "assets/images/presentes/descascador.png",
-    "reserved": 0,
+    "reserved": 1,
     "total": 1
   },
   {
@@ -23,7 +23,7 @@
     "description": "Para criar momentos doces e receitas especiais.",
     "price": 45,
     "image": "assets/images/presentes/forma-bolo.png",
-    "reserved": 0,
+    "reserved": 1,
     "total": 1
   },
   {
@@ -122,7 +122,7 @@
     "description": "Um espaço para descansar e aproveitar bons momentos.",
     "price": 180,
     "image": "assets/images/presentes/rede.png",
-    "reserved": 0,
+    "reserved": 1,
     "total": 1
   },
   {
@@ -150,6 +150,15 @@
     "price": 280,
     "image": "assets/images/presentes/rewild.png",
     "reserved": 0,
+    "total": 1
+  },
+  {
+    "id": 18,
+    "name": "Teste",
+    "description": "Isso é um teste",
+    "price": 123,
+    "image": "assets/images/presentes/colher-pau.png",
+    "reserved": 1,
     "total": 1
   }
 ]
