@@ -41,7 +41,7 @@
     "description": "Um clássico da cozinha para nossas receitas.",
     "price": 25,
     "image": "assets/images/presentes/peneira.png",
-    "reserved": 0,
+    "reserved": 1,
     "total": 1
   },
   {
