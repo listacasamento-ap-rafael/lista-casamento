@@ -28,11 +28,11 @@ export class EscolherPresenteComponent implements OnInit {
   pendingReservations = new Set<number>();
 
   constructor(private http: HttpClient, private router: Router) {
+    this.recebePresentes();
   }
 
   ngOnInit(): void {
-    this.recebePresentes();
-    this.pendingReservations.clear();
+    // this.pendingReservations.clear();
   }
 
   recebePresentes(): void {
@@ -95,13 +95,11 @@ export class EscolherPresenteComponent implements OnInit {
       next: (resultado: any) => {
         console.log(resultado);
         this.selectedGift!.reserved++;
-        this.recebePresentes();
         this.closeModal();
       },
       error: (erro: any) => {
         console.log(erro);
         this.selectedGift!.reserved++;
-        this.recebePresentes();
         this.closeModal();
       },
     })
