@@ -26,16 +26,21 @@ export class EscolherPresenteComponent implements OnInit {
 
   presentes: presente[] = [];
 
-  constructor(private http: HttpClient, private router: Router) {}
+  constructor(private http: HttpClient, private router: Router) {
+  }
 
   ngOnInit(): void {
     this.recebePresentes();
   }
 
-  recebePresentes():void{
+  recebePresentes(): void {
     this.http
-      .get<presente[]>('assets/presentes.json')
-      .subscribe(presentes => this.presentes = presentes);
+      .get<presente[]>(
+        'https://lista-casamento-api.listacasamento-ap-rafael.workers.dev'
+      )
+      .subscribe(presentes => {
+        this.presentes = presentes;
+      });
   }
 
   get filteredGifts() {
