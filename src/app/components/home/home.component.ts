@@ -15,6 +15,6 @@ export class HomeComponent {
   }
 
   protected navegaPaginaListaDePresentes() {
-    this.router.navigate(['/gifts']).then();
+    this.router.navigate(['/escolher-presente']).then();
   }
 }

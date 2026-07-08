@@ -9,6 +9,7 @@ import { GiftItemComponent } from './components/gift-item/gift-item.component';
 import { AdminConfirmComponent } from './components/admin-confirm/admin-confirm.component';
 import {AppRoutingModule} from "./app-routing.module";
 import {HomeComponent} from "./components/home/home.component";
+import {EscolherPresenteComponent} from "./components/escolher-presente/escolher-presente.component";
 
 @NgModule({
   declarations: [
@@ -16,7 +17,8 @@ import {HomeComponent} from "./components/home/home.component";
     GiftListComponent,
     GiftItemComponent,
     AdminConfirmComponent,
-    HomeComponent
+    HomeComponent,
+    EscolherPresenteComponent
   ],
   imports: [
     BrowserModule,

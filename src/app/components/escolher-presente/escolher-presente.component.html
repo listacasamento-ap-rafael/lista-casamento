@@ -1,0 +1,178 @@
+<div class="gift-page">
+
+  <div class="overlay">
+
+
+    <div class="logo"></div>
+
+
+    <h1>
+      Lista de Presentes
+    </h1>
+
+    <p class="subtitle">
+      Escolha um presente para fazer parte da nossa história.
+    </p>
+
+
+    <div class="search">
+
+      <input
+        [(ngModel)]="search"
+        placeholder="Buscar presente..."
+      >
+
+    </div>
+
+    <div class="availability-toggle">
+
+      <label class="switch">
+
+        <input
+          type="checkbox"
+          [(ngModel)]="showOnlyAvailable">
+
+        <span class="slider"></span>
+
+      </label>
+
+      <span>
+        Mostrar somente presentes disponíveis
+      </span>
+
+    </div>
+
+
+    <div class="gift-grid">
+
+
+      <div
+        class="gift-card"
+        *ngFor="let gift of filteredGifts">
+
+
+        <img
+          [src]="gift.image"
+          [alt]="gift.name">
+
+
+        <div class="content">
+
+
+          <h2>
+            {{ gift.name }}
+          </h2>
+
+
+          <p>
+            {{ gift.description }}
+          </p>
+
+
+          <strong class="price">
+            R$ {{ gift.price | number:'1.2-2' }}
+          </strong>
+
+
+          <div class="progress">
+
+            <div
+              class="bar"
+              [style.width.%]="(gift.reserved / gift.total) * 100">
+            </div>
+
+          </div>
+
+
+          <small>
+            {{ gift.reserved }} de {{ gift.total }} disponíveis
+          </small>
+
+
+          <button
+            (click)="presentear(gift)">
+            🎁 Presentear
+          </button>
+
+
+        </div>
+
+
+      </div>
+
+
+    </div>
+
+
+  </div>
+
+</div>
+
+<div
+  class="modal-backdrop"
+  *ngIf="showModal"
+  (click)="closeModal()">
+
+
+  <div
+    class="modal"
+    (click)="$event.stopPropagation()">
+
+
+    <button
+      class="close"
+      (click)="closeModal()">
+      ×
+    </button>
+
+
+    <img
+      *ngIf="selectedGift"
+      [src]="selectedGift.image"
+      [alt]="selectedGift.name">
+
+
+    <h2>
+      {{ selectedGift?.name }}
+    </h2>
+
+
+    <p>
+      {{ selectedGift?.description }}
+    </p>
+
+
+    <strong>
+      R$ {{ selectedGift?.price | number:'1.2-2' }}
+    </strong>
+
+
+    <p class="question">
+      Deseja presentear este item?
+    </p>
+
+
+    <div class="actions">
+
+
+      <button
+        class="cancel"
+        (click)="closeModal()">
+        Cancelar
+      </button>
+
+
+      <button
+        class="confirm"
+        (click)="confirmGift()">
+        🎁 Confirmar presente
+      </button>
+
+
+    </div>
+
+
+  </div>
+
+
+</div>
