@@ -32,6 +32,7 @@ export class EscolherPresenteComponent implements OnInit {
 
   ngOnInit(): void {
     this.recebePresentes();
+    this.pendingReservations.clear();
   }
 
   recebePresentes(): void {
@@ -42,12 +43,10 @@ export class EscolherPresenteComponent implements OnInit {
       next: (resultado: any) => {
         console.log(resultado);
         this.presentes = resultado;
-        this.pendingReservations.clear();
       },
       error: (erro: any) => {
         console.log(erro);
         this.presentes = erro;
-        this.pendingReservations.clear();
       },
     })
   }
