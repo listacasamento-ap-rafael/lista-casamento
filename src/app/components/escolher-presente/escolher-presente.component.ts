@@ -37,10 +37,16 @@ export class EscolherPresenteComponent implements OnInit {
     this.http
       .get<presente[]>(
         'https://lista-casamento-api.listacasamento-ap-rafael.workers.dev'
-      )
-      .subscribe(listaPresentes => {
-        this.presentes = listaPresentes;
-      });
+      ).subscribe({
+      next: (resultado: any) => {
+        console.log(resultado);
+        this.presentes = resultado;
+      },
+      error: (erro: any) => {
+        console.log(erro);
+        this.presentes = erro;
+      },
+    })
   }
 
   get filteredGifts() {
