@@ -5,7 +5,7 @@
     "description": "Um item essencial para preparar nossas receitas favoritas.",
     "price": 25,
     "image": "assets/images/presentes/colher-pau.png",
-    "reserved": 1,
+    "reserved": 0,
     "total": 1
   },
   {
@@ -14,7 +14,7 @@
     "description": "Para facilitar o preparo dos nossos pratos do dia a dia.",
     "price": 20,
     "image": "assets/images/presentes/descascador.png",
-    "reserved": 1,
+    "reserved": 0,
     "total": 1
   },
   {
@@ -23,7 +23,7 @@
     "description": "Para criar momentos doces e receitas especiais.",
     "price": 45,
     "image": "assets/images/presentes/forma-bolo.png",
-    "reserved": 1,
+    "reserved": 0,
     "total": 1
   },
   {
@@ -32,7 +32,7 @@
     "description": "Para manter nossas ferramentas de cozinha sempre prontas.",
     "price": 35,
     "image": "assets/images/presentes/amolador.png",
-    "reserved": 1,
+    "reserved": 0,
     "total": 1
   },
   {
@@ -41,7 +41,7 @@
     "description": "Um clássico da cozinha para nossas receitas.",
     "price": 25,
     "image": "assets/images/presentes/peneira.png",
-    "reserved": 1,
+    "reserved": 0,
     "total": 1
   },
   {
@@ -50,7 +50,7 @@
     "description": "Para aquecer nossas refeições mantendo tudo organizado.",
     "price": 30,
     "image": "assets/images/presentes/tampa-microondas.png",
-    "reserved": 1,
+    "reserved": 0,
     "total": 1
   },
   {
