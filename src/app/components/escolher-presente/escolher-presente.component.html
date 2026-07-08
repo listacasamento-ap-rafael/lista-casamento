@@ -50,11 +50,14 @@
         class="gift-card"
         *ngFor="let gift of filteredGifts">
 
-
-        <img
+        <!--<img
           [src]="gift.image"
-          [alt]="gift.name">
+          [alt]="gift.name">-->
 
+        <div class="image-wrapper">
+          <img class="blur" [src]="gift.image" alt="{{gift.name}}">
+          <img class="main" [src]="gift.image" alt="{{gift.name}}">
+        </div>
 
         <div class="content">
 
@@ -67,12 +70,6 @@
           <p>
             {{ gift.description }}
           </p>
-
-
-          <strong class="price">
-            R$ {{ gift.price | number:'1.2-2' }}
-          </strong>
-
 
           <div class="progress">
 
@@ -140,11 +137,6 @@
     <p>
       {{ selectedGift?.description }}
     </p>
-
-
-    <strong>
-      R$ {{ selectedGift?.price | number:'1.2-2' }}
-    </strong>
 
 
     <p class="question">
