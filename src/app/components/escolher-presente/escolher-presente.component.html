@@ -22,7 +22,7 @@
     </h1>
 
     <p class="subtitle">
-      Escolha um presente para fazer parte da nossa história. teste
+      Escolha um presente para fazer parte da nossa história.
     </p>
 
 
@@ -82,17 +82,25 @@
             {{ gift.description }}
           </p>
 
-          <div class="progress" *ngIf="!pendingReservations.has(gift.id) && gift.reserved < gift.total">
+          <div class="progress">
 
-            <div
+            <div *ngIf="gift.reserved < gift.total &&
+            !pendingReservations.has(gift.id)
+            "
                  class="bar"
                  [style.width.%]="(gift.reserved / gift.total) * 100">
+            </div>
+
+            <div *ngIf="gift.reserved >= gift.total || pendingReservations.has(gift.id)">
+              <span>Esse presente já foi escolhido</span>
             </div>
 
           </div>
 
 
-          <small *ngIf="!pendingReservations.has(gift.id) && gift.reserved < gift.total">
+          <small *ngIf="gift.reserved < gift.total &&
+            !pendingReservations.has(gift.id)
+            ">
             {{ gift.reserved }} de {{ gift.total }}
           </small>
 
@@ -107,15 +115,9 @@
           </button>
 
           <span
-            *ngIf="confirmado"
+            *ngIf="pendingReservations.has(gift.id)"
             class="reserved-message">
             Presente confirmado ❤️
-          </span>
-
-          <span
-            *ngIf="gift.reserved >= gift.total"
-            class="reserved-message">
-            Esse presente já foi escolhido️
           </span>
 
 
