@@ -1,24 +1,46 @@
-const fs = require('fs');
+const fs = require("fs");
 
 const id = Number(process.argv[2]);
 
-const arquivo = 'src/assets/presentes.json';
+const file = "src/assets/presentes.json";
 
-const presentes = JSON.parse(
-    fs.readFileSync(arquivo)
+const data = JSON.parse(
+  fs.readFileSync(file, "utf8")
 );
 
-const presente = presentes.find(p => p.id === id);
 
-if (!presente)
-    process.exit(1);
+const presente = data.find(
+  item => item.id === id
+);
 
-if (presente.reserved >= presente.total)
-    process.exit(0);
+
+if (!presente) {
+  console.error("Presente não encontrado");
+  process.exit(1);
+}
+
+
+if (presente.reserved >= presente.total) {
+
+  console.error(
+    "Presente já reservado"
+  );
+
+  process.exit(1);
+
+}
+
 
 presente.reserved++;
 
+
 fs.writeFileSync(
-    arquivo,
-    JSON.stringify(presentes, null, 2)
+  file,
+  JSON.stringify(data, null, 2),
+  "utf8"
+);
+
+
+console.log(
+  `Presente ${id} reservado`
 );
