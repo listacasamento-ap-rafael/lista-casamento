@@ -29,6 +29,10 @@ export class EscolherPresenteComponent implements OnInit {
   constructor(private http: HttpClient, private router: Router) {}
 
   ngOnInit(): void {
+    this.recebePresentes();
+  }
+
+  recebePresentes():void{
     this.http
       .get<presente[]>('assets/presentes.json')
       .subscribe(presentes => this.presentes = presentes);
@@ -70,10 +74,21 @@ export class EscolherPresenteComponent implements OnInit {
       {
         id: this.selectedGift.id
       }
-    ).subscribe(() => {
-      this.selectedGift!.reserved++;
-      this.closeModal();
-    });
+    ).subscribe({
+      next: (resultado: any) => {
+        console.log(resultado);
+        this.selectedGift!.reserved++;
+        this.recebePresentes();
+        this.closeModal();
+      },
+      error: (erro: any) => {
+        console.log(erro);
+        this.selectedGift!.reserved++;
+        this.recebePresentes();
+        this.closeModal();
+      },
+    })
+
   }
 
   protected navegaParaHome() {
