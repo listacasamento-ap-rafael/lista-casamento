@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { ReservationService } from '../../services/reservation.service';
+import {Router} from "@angular/router";
 
 @Component({
   selector: 'app-admin-confirm',
@@ -7,11 +8,10 @@ import { ReservationService } from '../../services/reservation.service';
   styleUrls: ['./admin-confirm.component.scss']
 })
 export class AdminConfirmComponent implements OnInit {
-  reservations: any[] = [];
   password = '';
   authenticated = false;
 
-  constructor(private resService: ReservationService) {}
+  constructor(private resService: ReservationService, private router: Router) {}
 
   ngOnInit(): void {
     this.load();
@@ -32,4 +32,9 @@ export class AdminConfirmComponent implements OnInit {
     this.resService.confirmReservation(item['ID do presente'], 'Casal', photoLink)
       .subscribe(() => this.load());
   }
+
+  protected navegaParaHome() {
+    this.router.navigate(['/home']).then();
+  }
+
 }

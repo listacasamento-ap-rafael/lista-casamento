@@ -1,0 +1,173 @@
+[
+  {
+    "id": 1,
+    "name": "Colher de Pau",
+    "description": "Um item essencial para preparar nossas receitas favoritas.",
+    "price": 25,
+    "image": "assets/images/presentes/colher-pau.png",
+    "reserved": 0,
+    "total": 1
+  },
+  {
+    "id": 2,
+    "name": "Descascador de Legumes",
+    "description": "Para facilitar o preparo dos nossos pratos do dia a dia.",
+    "price": 20,
+    "image": "assets/images/presentes/descascador.png",
+    "reserved": 0,
+    "total": 1
+  },
+  {
+    "id": 3,
+    "name": "Forma de Bolo",
+    "description": "Para criar momentos doces e receitas especiais.",
+    "price": 45,
+    "image": "assets/images/presentes/forma-bolo.png",
+    "reserved": 0,
+    "total": 1
+  },
+  {
+    "id": 4,
+    "name": "Amolador de Facas",
+    "description": "Para manter nossas ferramentas de cozinha sempre prontas.",
+    "price": 35,
+    "image": "assets/images/presentes/amolador.png",
+    "reserved": 0,
+    "total": 1
+  },
+  {
+    "id": 5,
+    "name": "Peneira",
+    "description": "Um clássico da cozinha para nossas receitas.",
+    "price": 25,
+    "image": "assets/images/presentes/peneira.png",
+    "reserved": 0,
+    "total": 1
+  },
+  {
+    "id": 6,
+    "name": "Tampa para Microondas",
+    "description": "Para aquecer nossas refeições mantendo tudo organizado.",
+    "price": 30,
+    "image": "assets/images/presentes/tampa-microondas.png",
+    "reserved": 0,
+    "total": 1
+  },
+  {
+    "id": 7,
+    "name": "Filtro de Linha com Cabo Longo",
+    "description": "Mais praticidade e segurança para nossa casa.",
+    "price": 80,
+    "image": "assets/images/presentes/filtro-linha.png",
+    "reserved": 0,
+    "total": 1
+  },
+  {
+    "id": 8,
+    "name": "Mini Liquidificador",
+    "description": "Para vitaminas, molhos e preparos rápidos.",
+    "price": 120,
+    "image": "assets/images/presentes/mini-liquidificador.png",
+    "reserved": 0,
+    "total": 1
+  },
+  {
+    "id": 9,
+    "name": "Mini Processador de Alimentos",
+    "description": "Um ajudante para cortar e preparar ingredientes.",
+    "price": 150,
+    "image": "assets/images/presentes/processador.png",
+    "reserved": 0,
+    "total": 1
+  },
+  {
+    "id": 10,
+    "name": "Balde Retrátil",
+    "description": "Praticidade para limpeza e organização da casa.",
+    "price": 70,
+    "image": "assets/images/presentes/balde-retratil.png",
+    "reserved": 0,
+    "total": 1
+  },
+  {
+    "id": 11,
+    "name": "Cortador de Frutas e Legumes",
+    "description": "Para facilitar o preparo de cubinhos e cortes rápidos.",
+    "price": 60,
+    "image": "assets/images/presentes/cortador-frutas.png",
+    "reserved": 0,
+    "total": 1
+  },
+  {
+    "id": 12,
+    "name": "Máquina de Fazer Pão",
+    "description": "Para transformar nossa cozinha em uma pequena padaria.",
+    "price": 500,
+    "image": "assets/images/presentes/maquina-pao.png",
+    "reserved": 0,
+    "total": 1
+  },
+  {
+    "id": 13,
+    "name": "Manta para Sofá - Tons Terrosos",
+    "description": "Para deixar nosso cantinho mais aconchegante.",
+    "price": 120,
+    "image": "assets/images/presentes/manta-sofa.png",
+    "reserved": 0,
+    "total": 1
+  },
+  {
+    "id": 14,
+    "name": "Rede Pequena",
+    "description": "Um espaço para descansar e aproveitar bons momentos.",
+    "price": 180,
+    "image": "assets/images/presentes/rede.png",
+    "reserved": 0,
+    "total": 1
+  },
+  {
+    "id": 15,
+    "name": "Jogo de Tabuleiro - Ethnos",
+    "description": "Uma aventura estratégica para nossas noites de jogos.",
+    "price": 250,
+    "image": "assets/images/presentes/ethnos.png",
+    "reserved": 0,
+    "total": 1
+  },
+  {
+    "id": 16,
+    "name": "Jogo de Tabuleiro - Flamecraft",
+    "description": "Um jogo divertido para reunir amigos e família.",
+    "price": 300,
+    "image": "assets/images/presentes/flamecraft.png",
+    "reserved": 0,
+    "total": 1
+  },
+  {
+    "id": 17,
+    "name": "Jogo de Tabuleiro - Rewild: América do Sul",
+    "description": "Uma experiência de estratégia inspirada na natureza.",
+    "price": 280,
+    "image": "assets/images/presentes/rewild.png",
+    "reserved": 0,
+    "total": 1
+  },
+  {
+    "id": 18,
+    "name": "Item Temático para Casa - Pokémon",
+    "description": "Um detalhe especial para deixar nossa casa com nossa personalidade.",
+    "price": 100,
+    "image": "assets/images/presentes/pokemon.png",
+    "reserved": 0,
+    "total": 1
+  },
+  {
+    "id": 19,
+    "name": "Item Temático para Casa - One Piece",
+    "description": "Uma decoração especial para nosso cantinho geek.",
+    "price": 100,
+    "image": "assets/images/presentes/one-piece.png",
+    "reserved": 0,
+    "total": 1
+  }
+]

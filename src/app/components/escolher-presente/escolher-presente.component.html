@@ -3,7 +3,7 @@
   <div class="overlay">
 
 
-    <div class="logo"></div>
+    <div class="logo" (click)="navegaParaHome()"></div>
 
 
     <h1>
@@ -86,7 +86,7 @@
           </small>
 
 
-          <button
+          <button *ngIf="gift.reserved < gift.total"
             (click)="presentear(gift)">
             🎁 Presentear
           </button>

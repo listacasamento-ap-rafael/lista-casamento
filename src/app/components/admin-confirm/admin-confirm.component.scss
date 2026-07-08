@@ -1,0 +1,127 @@
+.admin-panel {
+
+  min-height: 100vh;
+
+  background: #fbf8f1;
+
+  display: flex;
+
+  justify-content: center;
+
+  align-items: center;
+
+  padding: 40px;
+
+}
+
+.admin-card {
+
+  width: 100%;
+
+  max-width: 420px;
+
+  background: white;
+
+  border-radius: 24px;
+
+  padding: 40px;
+
+  box-shadow: 0 15px 40px rgba(64, 75, 51, .12);
+
+  animation: fadeIn .5s ease;
+
+}
+
+.logo {
+
+  height: 120px;
+
+  background-image: url('../../../assets/images/logo.png');
+
+  background-repeat: no-repeat;
+
+  background-position: center;
+
+  background-size: contain;
+
+  cursor: pointer;
+
+  margin-bottom: 30px;
+
+}
+
+.login-form {
+
+  display: flex;
+
+  flex-direction: column;
+
+  gap: 18px;
+
+}
+
+.login-form h2 {
+
+  text-align: center;
+
+  color: #404b33;
+
+  margin: 0 0 10px;
+
+  font-weight: 600;
+
+}
+
+.login-form input {
+
+  padding: 14px 18px;
+
+  border-radius: 12px;
+
+  border: 1px solid #d6d6d6;
+
+  font-size: 1rem;
+
+  outline: none;
+
+  transition: .2s;
+
+}
+
+.login-form input:focus {
+
+  border-color: #8b9275;
+
+  box-shadow: 0 0 0 3px rgba(139, 146, 117, .15);
+
+}
+
+.login-form button {
+
+  padding: 15px;
+
+  border: none;
+
+  border-radius: 999px;
+
+  background: #8b9275;
+
+  color: white;
+
+  font-size: 1rem;
+
+  font-weight: 600;
+
+  cursor: pointer;
+
+  transition: .25s;
+
+}
+
+.login-form button:hover {
+
+  background: #6d7161;
+
+  transform: translateY(-2px);
+
+}
