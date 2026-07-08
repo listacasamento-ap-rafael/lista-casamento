@@ -106,11 +106,11 @@
             🎁 Presentear
           </button>
 
-          <!--          <span
-            *ngIf="pendingReservations.has(gift.id)"
+          <span
+            *ngIf="confirmado"
             class="reserved-message">
             Presente confirmado ❤️
-          </span> -->
+          </span>
 
           <span
             *ngIf="gift.reserved >= gift.total"

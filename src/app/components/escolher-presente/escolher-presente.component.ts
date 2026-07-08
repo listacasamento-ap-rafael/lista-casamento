@@ -27,6 +27,7 @@ export class EscolherPresenteComponent implements OnInit {
 
   presentes: presente[] = [];
   pendingReservations = new Set<number>();
+  confirmado = false;
 
   constructor(private http: HttpClient, private router: Router) {
   }
@@ -37,6 +38,7 @@ export class EscolherPresenteComponent implements OnInit {
 
   recebePresentes(): void {
     this.loading = true;
+    this.confirmado = false;
     this.http
       .get<presente[]>(
         'https://lista-casamento-api.listacasamento-ap-rafael.workers.dev'
@@ -111,6 +113,7 @@ export class EscolherPresenteComponent implements OnInit {
             gift.reserved++;
           }
 
+          this.confirmado = true;
           this.loading = false;
 
           this.closeModal();
