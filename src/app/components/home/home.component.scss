@@ -15,12 +15,25 @@
   padding: 0.25vw;
 }
 
+.logo {
+  min-height: 18vh;
+  background-image: url('../../../assets/images/logo.png');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  padding: 0.25vw;
+}
+
 .overlay {
   width: 100%;
-  max-width: 700px;
-  padding: 50px;
-  border-radius: 24px;
-  background: rgb(71 80 102 / 0.75);
+  max-width: calc(45vw + 1rem);
+  padding: 5vh;
+  border-radius: 2vh;
+  background: #fbf8f1;
   backdrop-filter: blur(2px);
   border: 1px solid rgba(255, 255, 255, .18);
   text-align: center;
@@ -58,8 +71,9 @@ h1 span {
 .welcome {
   font-size: calc(1.25vh + 1rem);
   font-weight: 800;
+  margin-top: 0;
   margin-bottom: 1vh;
-  color: #EAE0C8;
+  color: #6d7161;
 }
 
 .intro {
@@ -67,12 +81,12 @@ h1 span {
   line-height: calc(0.75vh + 1.25rem);
   opacity: .95;
   margin-bottom: 3vh;
-  color: #f8f5ed;
+  color: #404b33;
 }
 
 .gift-btn {
-  background: #FFD369;
-  color: #222;
+  background: #bbbdb0;
+  color: #404b33;
   border: none;
   padding: 18px 40px;
   border-radius: 50px;
@@ -84,17 +98,17 @@ h1 span {
 
 .gift-btn:hover {
   transform: translateY(-3px);
-  box-shadow: 0 12px 25px rgba(0, 0, 0, .3);
-  background: #ffe28f;
+  box-shadow: 0 12px 25px rgb(64 75 51 / 0.75);
+  background: #bbbdb0;
 }
 
 .admin-btn {
   position: absolute;
   top: calc(.25rem + 1vw);
   right: calc(.25rem + 1vw);
-  background: #B2CAFF;
+  background: #5e6352;
   border: 1px solid rgba(255, 255, 255, .3);
-  color: #3e4d64;
+  color: #fbf8f1;
   font-weight: 600;
   padding: 1.25vh;
   border-radius: .5vw;
@@ -104,7 +118,7 @@ h1 span {
 }
 
 .admin-btn:hover {
-  background: rgb(178 202 255 / 0.5);
+  background: rgb(94 99 82 / 0.5);
 }
 
 @keyframes fadeIn {
@@ -139,7 +153,7 @@ h1 span {
   gap:40px;
   margin-top:40px;
   flex-wrap:wrap;
-  color:#f8f5ed;
+  color:#6d7161;
 }
 
 .info div{
