@@ -82,9 +82,9 @@
             {{ gift.description }}
           </p>
 
-          <div class="progress">
+          <div class="progress" *ngIf="!pendingReservations.has(gift.id)">
 
-            <div *ngIf="!pendingReservations.has(gift.id)"
+            <div
                  class="bar"
                  [style.width.%]="(gift.reserved / gift.total) * 100">
             </div>
@@ -92,7 +92,7 @@
           </div>
 
 
-          <small>
+          <small *ngIf="!pendingReservations.has(gift.id)">
             {{ gift.reserved }} de {{ gift.total }}
           </small>
 
