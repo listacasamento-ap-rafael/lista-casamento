@@ -151,5 +151,14 @@
     "image": "assets/images/presentes/rewild.png",
     "reserved": 0,
     "total": 1
+  },
+  {
+    "id": 18,
+    "name": "Teste",
+    "description": "Isso é um teste",
+    "price": 123,
+    "image": "assets/images/presentes/colher-pau.png",
+    "reserved": 0,
+    "total": 1
   }
 ]
