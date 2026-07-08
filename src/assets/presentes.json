@@ -151,23 +151,5 @@
     "image": "assets/images/presentes/rewild.png",
     "reserved": 0,
     "total": 1
-  },
-  {
-    "id": 18,
-    "name": "Item Temático para Casa - Pokémon",
-    "description": "Um detalhe especial para deixar nossa casa com nossa personalidade.",
-    "price": 100,
-    "image": "assets/images/presentes/pokemon.png",
-    "reserved": 0,
-    "total": 1
-  },
-  {
-    "id": 19,
-    "name": "Item Temático para Casa - One Piece",
-    "description": "Uma decoração especial para nosso cantinho geek.",
-    "price": 100,
-    "image": "assets/images/presentes/one-piece.png",
-    "reserved": 0,
-    "total": 1
   }
 ]

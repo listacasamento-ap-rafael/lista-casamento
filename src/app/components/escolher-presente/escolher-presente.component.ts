@@ -38,8 +38,8 @@ export class EscolherPresenteComponent implements OnInit {
       .get<presente[]>(
         'https://lista-casamento-api.listacasamento-ap-rafael.workers.dev'
       )
-      .subscribe(presentes => {
-        this.presentes = presentes;
+      .subscribe(listaPresentes => {
+        this.presentes = listaPresentes;
       });
   }
 
