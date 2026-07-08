@@ -158,7 +158,7 @@
     "description": "Isso é um teste",
     "price": 123,
     "image": "assets/images/presentes/colher-pau.png",
-    "reserved": 0,
+    "reserved": 1,
     "total": 1
   }
 ]
