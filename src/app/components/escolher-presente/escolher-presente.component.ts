@@ -25,6 +25,7 @@ export class EscolherPresenteComponent implements OnInit {
   showOnlyAvailable = false;
 
   presentes: presente[] = [];
+  pendingReservations = new Set<number>();
 
   constructor(private http: HttpClient, private router: Router) {
   }
@@ -41,10 +42,12 @@ export class EscolherPresenteComponent implements OnInit {
       next: (resultado: any) => {
         console.log(resultado);
         this.presentes = resultado;
+        this.pendingReservations.clear();
       },
       error: (erro: any) => {
         console.log(erro);
         this.presentes = erro;
+        this.pendingReservations.clear();
       },
     })
   }
@@ -80,10 +83,14 @@ export class EscolherPresenteComponent implements OnInit {
     if (!this.selectedGift) {
       return;
     }
+
+    const giftId = this.selectedGift.id;
+    this.pendingReservations.add(giftId);
+
     this.http.post(
       "https://lista-casamento-api.listacasamento-ap-rafael.workers.dev",
       {
-        id: this.selectedGift.id
+        id: giftId
       }
     ).subscribe({
       next: (resultado: any) => {
