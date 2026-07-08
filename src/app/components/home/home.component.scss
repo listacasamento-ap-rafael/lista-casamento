@@ -162,3 +162,33 @@ h1 span {
   gap:8px;
   opacity:.9;
 }
+
+.maps-button {
+  display: inline-flex;
+  align-items: center;
+
+  padding: 14px 22px;
+
+  color: #6d7161;
+  text-decoration: none;
+
+  .icon {
+    font-size: 1.8rem;
+  }
+
+  .text {
+    display: flex;
+    flex-direction: column;
+
+    strong {
+      font-size: 1rem;
+      font-weight: 600;
+    }
+
+    small {
+      opacity: .9;
+      font-size: .85rem;
+    }
+  }
+
+}
