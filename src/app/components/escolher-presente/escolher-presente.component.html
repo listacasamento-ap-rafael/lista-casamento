@@ -91,15 +91,13 @@
                  [style.width.%]="(gift.reserved / gift.total) * 100">
             </div>
 
-            <div *ngIf="gift.reserved >= gift.total || pendingReservations.has(gift.id)">
-              <span>Esse presente já foi escolhido</span>
-            </div>
-
           </div>
 
+          <div *ngIf="gift.reserved >= gift.total && !confirmado">
+            <span>Esse presente já foi escolhido</span>
+          </div>
 
-          <small *ngIf="gift.reserved < gift.total &&
-            !pendingReservations.has(gift.id)
+          <small *ngIf="gift.reserved < gift.total && !confirmado
             ">
             {{ gift.reserved }} de {{ gift.total }}
           </small>
@@ -107,15 +105,14 @@
 
           <button
             *ngIf="
-            gift.reserved < gift.total &&
-            !pendingReservations.has(gift.id)
+            gift.reserved < gift.total && !confirmado
             "
             (click)="presentear(gift)">
             🎁 Presentear
           </button>
 
           <span
-            *ngIf="pendingReservations.has(gift.id)"
+            *ngIf="pendingReservations.has(gift.id) || confirmado"
             class="reserved-message">
             Presente confirmado ❤️
           </span>
