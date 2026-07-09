@@ -114,6 +114,7 @@ h1 {
   }
 
   .image-wrapper{
+    margin-top: 0.25vh;
     position: relative;
     height: 200px;
     overflow: hidden;
@@ -273,7 +274,7 @@ button {
 
   img {
     border: 1px solid #6d7161;
-    background: #fff;
+    background: #fff !important;
     width: 180px;
     height: 180px;
     object-fit: contain;
