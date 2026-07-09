@@ -84,9 +84,7 @@
 
           <div class="progress">
 
-            <div *ngIf="gift.reserved < gift.total &&
-            !pendingReservations.has(gift.id)
-            "
+            <div *ngIf="gift.reserved < gift.total && !confirmado"
                  class="bar"
                  [style.width.%]="(gift.reserved / gift.total) * 100">
             </div>
@@ -104,15 +102,13 @@
 
 
           <button
-            *ngIf="
-            gift.reserved < gift.total && !confirmado
-            "
+            *ngIf="gift.reserved < gift.total && !confirmado"
             (click)="presentear(gift)">
             🎁 Presentear
           </button>
 
           <span
-            *ngIf="pendingReservations.has(gift.id) || confirmado"
+            *ngIf="pendingReservations.has(gift.id)"
             class="reserved-message">
             Presente confirmado ❤️
           </span>
