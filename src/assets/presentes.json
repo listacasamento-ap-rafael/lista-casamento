@@ -19,15 +19,42 @@
   },
   {
     "id": 3,
-    "name": "Forma de Bolo",
-    "description": "Para criar momentos doces e receitas especiais.",
+    "name": "Forma de Bolo Redonda",
+    "description": "Para fazer bolos gostosos.",
     "price": 45,
-    "image": "assets/images/presentes/forma-bolo.png",
+    "image": "assets/images/presentes/forma-redonda.png",
     "reserved": 0,
     "total": 1
   },
   {
     "id": 4,
+    "name": "Forma de Bolo com Fundo Removível",
+    "description": "Para criar momentos doces e receitas especiais.",
+    "price": 45,
+    "image": "assets/images/presentes/forma-removivel.png",
+    "reserved": 0,
+    "total": 1
+  },
+  {
+    "id": 5,
+    "name": "Forma Quadrada",
+    "description": "Para quando nos aventurarmos na cozinha.",
+    "price": 45,
+    "image": "assets/images/presentes/forma-retangular.png",
+    "reserved": 0,
+    "total": 1
+  },
+  {
+    "id": 6,
+    "name": "Forma de Pizza",
+    "description": "Para quando quisermos fazer cosplay de italiano.",
+    "price": 45,
+    "image": "assets/images/presentes/forma-pizza.png",
+    "reserved": 0,
+    "total": 1
+  },
+  {
+    "id": 7,
     "name": "Amolador de Facas",
     "description": "Para manter nossas ferramentas de cozinha sempre prontas.",
     "price": 35,
@@ -36,7 +63,7 @@
     "total": 1
   },
   {
-    "id": 5,
+    "id": 8,
     "name": "Peneira",
     "description": "Um clássico da cozinha para nossas receitas.",
     "price": 25,
@@ -45,7 +72,7 @@
     "total": 1
   },
   {
-    "id": 6,
+    "id": 9,
     "name": "Tampa para Microondas",
     "description": "Para aquecer nossas refeições mantendo tudo organizado.",
     "price": 30,
@@ -54,7 +81,25 @@
     "total": 1
   },
   {
-    "id": 7,
+    "id": 10,
+    "name": "Jarra Medidora",
+    "description": "Para medir líquidos.",
+    "price": 35,
+    "image": "assets/images/presentes/jarra-medidora.png",
+    "reserved": 0,
+    "total": 1
+  },
+  {
+    "id":11,
+    "name": "Porta Copo",
+    "description": "Para abraçar nossos copos.",
+    "price": 35,
+    "image": "assets/images/presentes/porta-copo.png",
+    "reserved": 0,
+    "total": 1
+  },
+  {
+    "id": 12,
     "name": "Filtro de Linha com Cabo Longo",
     "description": "Mais praticidade e segurança para nossa casa.",
     "price": 80,
@@ -63,7 +108,7 @@
     "total": 1
   },
   {
-    "id": 8,
+    "id": 13,
     "name": "Mini Liquidificador",
     "description": "Para vitaminas, molhos e preparos rápidos.",
     "price": 120,
@@ -72,7 +117,7 @@
     "total": 1
   },
   {
-    "id": 9,
+    "id": 14,
     "name": "Mini Processador de Alimentos",
     "description": "Um ajudante para cortar e preparar ingredientes.",
     "price": 150,
@@ -81,7 +126,7 @@
     "total": 1
   },
   {
-    "id": 10,
+    "id": 15,
     "name": "Balde Retrátil",
     "description": "Praticidade para limpeza e organização da casa.",
     "price": 70,
@@ -90,7 +135,7 @@
     "total": 1
   },
   {
-    "id": 11,
+    "id": 16,
     "name": "Cortador de Frutas e Legumes",
     "description": "Para facilitar o preparo de cubinhos e cortes rápidos.",
     "price": 60,
@@ -99,7 +144,7 @@
     "total": 1
   },
   {
-    "id": 12,
+    "id": 17,
     "name": "Ralador de Queijo",
     "description": "Para ampliar nossas habilidades culinárias.",
     "price": 500,
@@ -108,7 +153,7 @@
     "total": 1
   },
   {
-    "id": 13,
+    "id": 18,
     "name": "Máquina de Fazer Pão",
     "description": "Para transformar nossa cozinha em uma pequena padaria.",
     "price": 500,
@@ -117,7 +162,7 @@
     "total": 1
   },
   {
-    "id": 14,
+    "id": 19,
     "name": "Manta para Sofá - Tons Terrosos",
     "description": "Para deixar nosso cantinho mais aconchegante.",
     "price": 120,
@@ -126,7 +171,7 @@
     "total": 1
   },
   {
-    "id": 15,
+    "id": 20,
     "name": "Rede Pequena",
     "description": "Um espaço para descansar e aproveitar bons momentos.",
     "price": 180,
@@ -135,7 +180,7 @@
     "total": 1
   },
   {
-    "id": 16,
+    "id": 21,
     "name": "Jogo de Tabuleiro - Ethnos",
     "description": "Uma aventura estratégica para nossas noites de jogos.",
     "price": 250,
@@ -144,7 +189,7 @@
     "total": 1
   },
   {
-    "id": 17,
+    "id": 22,
     "name": "Jogo de Tabuleiro - Flamecraft",
     "description": "Um jogo divertido para reunir amigos e família.",
     "price": 300,
@@ -153,7 +198,7 @@
     "total": 1
   },
   {
-    "id": 18,
+    "id": 23,
     "name": "Jogo de Tabuleiro - Rewild: América do Sul",
     "description": "Uma experiência de estratégia inspirada na natureza.",
     "price": 280,
@@ -162,7 +207,7 @@
     "total": 1
   },
   {
-    "id": 19,
+    "id": 24,
     "name": "Controle de XBox",
     "description": "Para jogatinas virtuais.",
     "price": 123,
