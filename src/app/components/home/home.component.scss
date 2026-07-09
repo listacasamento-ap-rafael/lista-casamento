@@ -16,7 +16,7 @@
 }
 
 .logo {
-  min-height: 18vh;
+  min-height: calc(8vw + 1rem);
   background-image: url('../../../assets/images/logo.png');
   background-position: center;
   background-repeat: no-repeat;
@@ -26,6 +26,23 @@
   align-items: center;
   position: relative;
   padding: 0.25vw;
+}
+
+.foto-casal {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+
+  img {
+    width: calc(10vw + 1rem);
+    height: calc(10vw + 1rem);
+    border-radius: 50%;
+    object-fit: cover;
+    border: calc(0.25vw + 0.25rem) solid #5e6352;
+    box-shadow:
+      0 8px 24px rgb(64 75 51 / 0.18);
+  }
 }
 
 .overlay {
@@ -69,19 +86,21 @@ h1 span {
 }
 
 .welcome {
-  font-size: calc(1.25vh + 1rem);
-  font-weight: 800;
-  margin-top: 0;
-  margin-bottom: 1vh;
-  color: #6d7161;
+  font-family: "Marcellus", serif;
+  font-size: calc(1rem + 0.25vh);
+  font-weight: 400;
+  text-transform: uppercase;
+  letter-spacing: 0.3em;
+  color: #404b33;
 }
 
 .intro {
+  font-family: "Source Sans 3", sans-serif;
   font-size: calc(0.75vh + 1rem);
   line-height: calc(0.75vh + 1.25rem);
   opacity: .95;
   margin-bottom: 3vh;
-  color: #404b33;
+  color: #6d7161;
 }
 
 .gift-btn {
@@ -156,44 +175,65 @@ h1 span {
   color:#6d7161;
 }
 
+.text-1 {
+  font-family: "Cinzel", serif;
+  font-size: calc(0.75rem + 0.25vh);
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  display: flex;
+  flex-direction: column;
+
+  strong {
+    color: #6d7161;
+    font-size: calc(0.75rem + 0.25vh);
+    font-weight: 600;
+  }
+}
+
 .info div{
   display:flex;
   align-items:center;
   gap:8px;
   opacity:.9;
+
+}
+
+.location {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+}
+
+.venue {
+  margin: 0;
+  color: #6d7161;
+
+  font-family: "Cinzel", serif;
+  font-size: calc(1.25rem + 0.25vh);
+  font-weight: 400;
+
+  strong {
+    font-weight: 600;
+  }
 }
 
 .maps-button {
+  margin-top: -0.25vh;
+  font-size: calc(0.75rem + 0.25vh);
   display: inline-flex;
   align-items: center;
-
-  padding: 14px 22px;
-
-  color: #6d7161;
+  justify-content: center;
+  padding: 14px 28px;
+  border-radius: 999px;
+  color: #404b33;
   text-decoration: none;
+  font-weight: 600;
+  transition: .25s;
 
-  .icon {
-    font-size: 1.8rem;
+  &:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 10px 24px rgba(64, 75, 51, .25);
   }
-
-  .text {
-    display: flex;
-    flex-direction: column;
-
-    strong {
-      font-size: 1rem;
-      font-weight: 600;
-    }
-
-    small {
-      opacity: .9;
-      font-size: .85rem;
-    }
-
-  }
-
-  .text:hover {
-    transform: translateY(-3px);
-  }
-
 }
+
