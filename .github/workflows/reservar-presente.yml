@@ -10,6 +10,10 @@ on:
 
 permissions:
   contents: write
+  
+concurrency:
+  group: reservar-presentes
+  cancel-in-progress: false
 
 
 jobs:
@@ -50,4 +54,6 @@ jobs:
 
           git commit -m "Reserva presente ${{ github.event.inputs.id }}"
 
+          git pull --rebase origin main
+            
           git push origin main
