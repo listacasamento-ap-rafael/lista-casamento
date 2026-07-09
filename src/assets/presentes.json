@@ -14,7 +14,7 @@
     "description": "Para facilitar o preparo dos nossos pratos do dia a dia.",
     "price": 20,
     "image": "assets/images/presentes/descascador.png",
-    "reserved": 0,
+    "reserved": 1,
     "total": 1
   },
   {
@@ -23,7 +23,7 @@
     "description": "Para fazer bolos gostosos.",
     "price": 45,
     "image": "assets/images/presentes/forma-redonda.png",
-    "reserved": 0,
+    "reserved": 1,
     "total": 1
   },
   {
@@ -41,7 +41,7 @@
     "description": "Para quando nos aventurarmos na cozinha.",
     "price": 45,
     "image": "assets/images/presentes/forma-retangular.png",
-    "reserved": 0,
+    "reserved": 1,
     "total": 1
   },
   {
@@ -50,7 +50,7 @@
     "description": "Para quando quisermos fazer cosplay de italiano.",
     "price": 45,
     "image": "assets/images/presentes/forma-pizza.png",
-    "reserved": 0,
+    "reserved": 1,
     "total": 1
   },
   {
@@ -59,7 +59,7 @@
     "description": "Para manter nossas ferramentas de cozinha sempre prontas.",
     "price": 35,
     "image": "assets/images/presentes/amolador.png",
-    "reserved": 0,
+    "reserved": 1,
     "total": 1
   },
   {
