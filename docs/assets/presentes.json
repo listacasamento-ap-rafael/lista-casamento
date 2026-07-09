@@ -5,7 +5,7 @@
     "description": "Um item essencial para preparar nossas receitas favoritas.",
     "price": 25,
     "image": "assets/images/presentes/colher-pau.png",
-    "reserved": 0,
+    "reserved": 1,
     "total": 1
   },
   {
@@ -14,7 +14,7 @@
     "description": "Para facilitar o preparo dos nossos pratos do dia a dia.",
     "price": 20,
     "image": "assets/images/presentes/descascador.png",
-    "reserved": 0,
+    "reserved": 1,
     "total": 1
   },
   {
@@ -90,7 +90,7 @@
     "total": 1
   },
   {
-    "id":11,
+    "id": 11,
     "name": "Porta Copo",
     "description": "Para abraçar nossos copos.",
     "price": 35,
