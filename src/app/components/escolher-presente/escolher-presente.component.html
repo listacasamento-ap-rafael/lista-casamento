@@ -84,13 +84,14 @@
 
           <div class="progress" *ngIf="gift.reserved < gift.total">
             <div class="bar" [style.width.%]="(gift.reserved / gift.total) * 100"></div>
-            <small>
-              {{ gift.reserved }} de {{ gift.total }}
-            </small>
           </div>
 
+          <small *ngIf="gift.reserved < gift.total">
+            {{ gift.reserved }} de {{ gift.total }}
+          </small>
+
           <div *ngIf="gift.reserved >= gift.total && !pendingReservations.has(gift.id)">
-            <span>Esse presente já foi escolhido</span>
+            <strong>Esse presente já foi escolhido</strong>
           </div>
 
           <button
