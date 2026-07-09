@@ -22,7 +22,12 @@
     </h1>
 
     <p class="subtitle">
-      Escolha um presente para fazer parte da nossa história.
+      Caso deseje nos presentear, preparamos uma lista com algumas sugestões de presentes para facilitar a escolha, mas ela é apenas uma ideia. Se preferir presentear com outro item, fique totalmente à vontade!
+      Caso escolha um dos presentes da lista, clique em <strong>"Presentear"</strong> e depois em <strong>"Confirmar presente"</strong>. Assim, os outros convidados saberão que aquele item já foi escolhido.
+      A lista é apenas um registro simples de opções e escolhas, a compra do item não será feita por aqui. 
+      Você pode entregar o presente quando for mais conveniente para você, seja pessoalmente ou no endereço abaixo:
+      ------ Rua Vila Cristina, 92, apt 1001,  Condomínio Vila Borguese, Bairro São José, Aracaju/SE CEP 49015-000 ------
+      Muito obrigado(a) pelo carinho e por fazer parte deste momento tão especial! Sua presença já é um grande presente para nós!
     </p>
 
 
@@ -91,19 +96,19 @@
           </small>
 
           <div *ngIf="gift.reserved >= gift.total && !pendingReservations.has(gift.id)">
-            <strong>Esse presente já foi escolhido</strong>
+            <strong>Esse presente já foi escolhido ❤️</strong>
           </div>
 
           <button
             *ngIf="gift.reserved < gift.total && !pendingReservations.has(gift.id)"
             (click)="presentear(gift)">
-            🎁 Presentear
+            🎁 Escolher esse Presente
           </button>
 
           <strong
             *ngIf="pendingReservations.has(gift.id)"
             class="reserved-message">
-            Presente confirmado ❤️
+            Escolha confirmada ❤️ Aguardaremos ansiosamente!
           </strong>
 
 
@@ -172,7 +177,7 @@
       <button
         class="confirm"
         (click)="confirmGift()">
-        🎁 Confirmar presente
+        🎁 Confirmar Escolha
       </button>
 
 
