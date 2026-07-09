@@ -5,7 +5,7 @@
     "description": "Um item essencial para preparar nossas receitas favoritas.",
     "price": 25,
     "image": "assets/images/presentes/colher-pau.png",
-    "reserved": 0,
+    "reserved": 1,
     "total": 1
   },
   {
@@ -100,6 +100,15 @@
   },
   {
     "id": 12,
+    "name": "Ralador de Queijo",
+    "description": "Para ampliar nossas habilidades culinárias.",
+    "price": 500,
+    "image": "assets/images/presentes/ralador.png",
+    "reserved": 0,
+    "total": 1
+  },
+  {
+    "id": 13,
     "name": "Máquina de Fazer Pão",
     "description": "Para transformar nossa cozinha em uma pequena padaria.",
     "price": 500,
@@ -108,7 +117,7 @@
     "total": 1
   },
   {
-    "id": 13,
+    "id": 14,
     "name": "Manta para Sofá - Tons Terrosos",
     "description": "Para deixar nosso cantinho mais aconchegante.",
     "price": 120,
@@ -117,7 +126,7 @@
     "total": 1
   },
   {
-    "id": 14,
+    "id": 15,
     "name": "Rede Pequena",
     "description": "Um espaço para descansar e aproveitar bons momentos.",
     "price": 180,
@@ -126,7 +135,7 @@
     "total": 1
   },
   {
-    "id": 15,
+    "id": 16,
     "name": "Jogo de Tabuleiro - Ethnos",
     "description": "Uma aventura estratégica para nossas noites de jogos.",
     "price": 250,
@@ -135,7 +144,7 @@
     "total": 1
   },
   {
-    "id": 16,
+    "id": 17,
     "name": "Jogo de Tabuleiro - Flamecraft",
     "description": "Um jogo divertido para reunir amigos e família.",
     "price": 300,
@@ -144,7 +153,7 @@
     "total": 1
   },
   {
-    "id": 17,
+    "id": 18,
     "name": "Jogo de Tabuleiro - Rewild: América do Sul",
     "description": "Uma experiência de estratégia inspirada na natureza.",
     "price": 280,
@@ -153,11 +162,11 @@
     "total": 1
   },
   {
-    "id": 18,
-    "name": "Teste",
-    "description": "Isso é um teste",
+    "id": 19,
+    "name": "Controle de XBox",
+    "description": "Para jogatinas virtuais.",
     "price": 123,
-    "image": "assets/images/presentes/colher-pau.png",
+    "image": "assets/images/presentes/xbox.png",
     "reserved": 0,
     "total": 1
   }
