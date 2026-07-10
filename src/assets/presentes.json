@@ -212,7 +212,7 @@
     "description": "Para jogatinas virtuais.",
     "price": 123,
     "image": "assets/images/presentes/xbox.png",
-    "reserved": 0,
+    "reserved": 1,
     "total": 1
   }
 ]
