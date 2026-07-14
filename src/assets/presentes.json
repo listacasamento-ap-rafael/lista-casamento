@@ -95,7 +95,7 @@
     "description": "Para abraçar nossos copos.",
     "price": 35,
     "image": "assets/images/presentes/porta-copo.png",
-    "reserved": 0,
+    "reserved": 1,
     "total": 1
   },
   {
