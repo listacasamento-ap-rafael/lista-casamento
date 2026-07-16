@@ -122,7 +122,7 @@
     "description": "Um ajudante para cortar e preparar ingredientes.",
     "price": 150,
     "image": "assets/images/presentes/processador.png",
-    "reserved": 0,
+    "reserved": 1,
     "total": 1
   },
   {
