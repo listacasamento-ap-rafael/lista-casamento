@@ -176,7 +176,7 @@
     "description": "Um espaço para descansar e aproveitar bons momentos.",
     "price": 180,
     "image": "assets/images/presentes/rede.png",
-    "reserved": 0,
+    "reserved": 1,
     "total": 1
   },
   {
