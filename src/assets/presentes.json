@@ -32,7 +32,7 @@
     "description": "Para criar momentos doces e receitas especiais.",
     "price": 45,
     "image": "assets/images/presentes/forma-removivel.png",
-    "reserved": 0,
+    "reserved": 1,
     "total": 1
   },
   {
