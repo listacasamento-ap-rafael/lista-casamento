@@ -149,7 +149,7 @@
     "description": "Para ampliar nossas habilidades culinárias.",
     "price": 500,
     "image": "assets/images/presentes/ralador.png",
-    "reserved": 0,
+    "reserved": 1,
     "total": 1
   },
   {
